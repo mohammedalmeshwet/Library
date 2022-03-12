@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--IE Compatibility Meta-->
+        <meta http-equiv="X-UA-compatible" content="IE=edge" >
+        <!--First Mobile Meta-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>المكتبة</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <!--[if it IE 9]-->
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <!--[end if]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="#">المكتبة</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ">
+                        <li class="nav-item active"><a class="nav-link" href="#"> الصفحة الرئيسية <span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"><a class="nav-link" href="Login.html">تسجيل الدخول</a></li>
+                      </ul>              
+                </div>
+        </nav>
+            <div class="header d-flex">
+                      <div class="container filterDiv align-self-center rounded">
+                          <div class="row">
+                        
+                                <form action="search_Result.html" class=" mr-auto ml-auto">
+                                        <div class="col-12">
+                                               <h3 class="title-search">البحث عن كتاب معين</h3>
+                                                <div class="input-group mb-3 parent_search ">
+                                                                <div class="input-group-append ">
+                                                                        <button class="btn btn-success" type="submit">
+                                                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                                                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                                </svg>
+                                                                        </button>
+                                                                </div>
+                                                    <input type="search" class="form-control" placeholder="بحث">  
+                                                </div>
+                                                <div>    
+                                                        <div class="form-group form-filter">
+                                                                <label for="typeBook" class="bg-primary label-filter">النوع</label>
+                                                                <select  class="" id="typeBook">
+                                                                        <!-- <optgroup label="النوع"> -->
+                                                                        <option value="0"></option>
+                                                                        <option value="1">مراجع</option>
+                                                                        <option value="2">مجلات</option>
+                                                                        <option value="3">مشاريع</option>
+                                                                        <option value="4">مقررات</option>
+                                                                        <option value="5">الموسوعات</option>
+                                                                        <option value="6">رسائل الماجستير</option>
+                                                                <!-- </optgroup> -->
+                                                                </select>
+                                                        </div>
+                                                        <div class="form-group form-filter">
+                                                                        <label for="" class="bg-primary label-filter">المادة</label>
+                                                                        <select  class="" id="">
+                                                                                <option value="0"></option>
+                                                                                <option value="1">مراجع</option>
+                                                                                <option value="2">مجلات</option>
+                                                                                <option value="3">مشاريع</option>
+                                                                                <option value="4">مقررات</option>
+                                                                                <option value="5">الموسوعات</option>
+                                                                                <option value="6">رسائل الماجستير</option>
+                                                                        </select>
+                                                        </div>
+                                                        <div class="form-group form-filter">
+                                                                        <label for="" class="bg-primary label-filter">الدكتور المشرف</label>
+                                                                        <select  class="" id="">
+                                                                                <option></option>
+                                                                                <option>مراجع</option>
+                                                                                <option>مجلات</option>
+                                                                                <option>مشاريع</option>
+                                                                                <option>مقررات</option>
+                                                                                <option>الموسوعات</option>
+                                                                                <option>رسائل الماجستير</option>
+                                                                        </select>
+                                                        </div>
+                                                        <div class="form-group form-filter">
+                                                                        <label for="" class="bg-primary label-filter">حالة العنصر</label>
+                                                                        <select  class="" id="">
+                                                                                <option></option>
+                                                                                <option>موجود</option>
+                                                                                <option>مستعار</option>   
+                                                                        </select>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </form>
+                           
+                              <!-- <div class="col-12 parent_search">
+                                    <form action="search_Result.html" class="form-inline">
+                                        <div class="form-inline2">
+                                         <input type="search" class="form-control search"  placeholder="بحث">
+                                         <input type="submit" class="btn btn-danger submit_search" >
+                                        </div>
+                                    </form>
+                                </div> -->
+                                <!-- <div  class="col-sm-12 col-md-6 col-lg-4 col-xl-2 ">
+                                    <button class="btn btn-dark filter" value="References">المراجع</button>
+                                </div>
+                                <div  class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                                    <button class="btn btn-dark filter" value="Magazines">المجلات</button>
+                                </div>
+                                <div  class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                                    <button class="btn btn-dark filter" value="Projects">المشاريع</button>
+                                </div>
+                                <div  class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                                    <button class="btn btn-dark filter" value="Courses">المقررات</button>
+                                </div>
+                                <div  class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                                    <button class="btn btn-dark filter" value="Encyclopedias">الموسوعات</button>
+                                </div>
+                                <div  class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                                    <button class="btn btn-dark filter" value="MasterTheses">رسائل الماجستير</button>
+                                </div> -->
+                         </div> 
+                    </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <h4 class="text-light header_name p-4 rounded">المراجع</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-style">
+                            <div class="card ">
+                                    <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                            <h4 class="card-title">اسم الكتاب</h4>
+                                            <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                            <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                    </div>
+                                    <div class="card-footer">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-style">
+                                        <div class="card ">
+                                                <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                        <h4 class="card-title">اسم الكتاب</h4>
+                                                        <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                                        <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                                </div>
+                                                <div class="card-footer">
+                                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                            </svg>
+                                                </div>
+                                        </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-style">
+                                <div class="card ">
+                                        <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                        <div class="card-body">
+                                                <h4 class="card-title">اسم الكتاب</h4>
+                                                                <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                                                <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                        </div>
+                                        <div class="card-footer">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-style">
+                                        <div class="card ">
+                                                <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                        <h4 class="card-title">اسم الكتاب</h4>
+                                                                        <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                                                        <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                                </div>
+                                                <div class="card-footer">
+                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                        </svg>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-style">
+                                                <div class="card ">
+                                                        <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                                        <div class="card-body">
+                                                                <h4 class="card-title">اسم الكتاب</h4>
+                                                                                <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                                                                <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                </svg>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-style">
+                                                        <div class="card ">
+                                                                <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                                                <div class="card-body">
+                                                                        <h4 class="card-title">اسم الكتاب</h4>
+                                                                                        <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                                                                        <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                                                </div>
+                                                                <div class="card-footer">
+                                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                        </svg>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-style">
+                                                                <div class="card ">
+                                                                        <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">اسم الكتاب</h4>
+                                                                                                <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                                                                                <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                                                        </div>
+                                                                        <div class="card-footer">
+                                                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                                </svg>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-style">
+                                                                        <div class="card ">
+                                                                                <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                                                                <div class="card-body">
+                                                                                        <h4 class="card-title">اسم الكتاب</h4>
+                                                                                                        <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                                                                                        <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                                                                </div>
+                                                                                <div class="card-footer">
+                                                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                                                        </svg>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                              
+                </div>
+                <!-- <div class="col-12 ">
+                        <h4 class="text-light header_name p-4 rounded">المجلات</h4>
+                        <div class="card-deck">
+                            <div class="card ">
+                                    <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                            <h4 class="card-title">اسم الكتاب</h4>
+                                            <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                            <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                    </div>
+                            </div>
+                            <div class="card ">
+                                    <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                            <h4 class="card-title">اسم الكتاب</h4>
+                                            <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                            <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                    </div>
+                            </div>
+                            <div class="card ">
+                                    <img class="card-img-top" src="image/header2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                            <h4 class="card-title">اسم الكتاب</h4>
+                                            <p class="card-text">بعض المعلومات  عن الكتاب</p>
+                                            <a href="#" class="btn btn-primary d-flex">معلومات اضافية</a>
+                                    </div>
+                            </div>
+                        </div>
+                       <ul class="pagination justify-content-center bg-primary">
+                           <li>
+                               .
+                           </li>
+                       </ul>
+                    </div> -->
+                
+      
+            </div>
+        </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
